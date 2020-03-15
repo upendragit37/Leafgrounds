@@ -7,7 +7,7 @@ import javax.swing.event.ListDataEvent;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-import projectbase.projectSpecificMethods;
+import testng.api.base.projectSpecificMethods;
 
 public class TablePage extends projectSpecificMethods {
 

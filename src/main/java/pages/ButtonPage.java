@@ -1,19 +1,25 @@
 package pages;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
+import testng.api.base.projectSpecificMethods;
 
-import projectbase.projectSpecificMethods;
+
 public class ButtonPage extends projectSpecificMethods{
 
-	public ButtonPage ButtonPage_Click() throws InterruptedException  {
-		Thread.sleep(2000);
+	public ButtonPage ButtonPage_Click()   {
+		//Thread.sleep(7000);
 		driver.findElementByXPath("//img[@alt='Buttons']").click();
 		return this;
 	}
 	
-	public void ButtonPage_Field() {
+	public void ButtonPage_Field() throws InterruptedException {
 		
-		driver.findElementByXPath("//button[@id='home']").click();
+		Thread.sleep(2000);
+		driver.findElementByXPath("//button[@id='home']").click();//sendKeys(Keys.ENTER);
+		System.out.println("Home");
 		driver.findElementByXPath("//img[@alt='Buttons']").click();
+		System.out.println("Buttons");
+
 		
 		System.out.println(driver.findElementByXPath("//button[@id='position']").getLocation());
 		

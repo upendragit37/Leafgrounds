@@ -2,8 +2,7 @@ package pages;
 
 import org.openqa.selenium.Keys;
 
-import projectbase.projectSpecificMethods;
-
+import testng.api.base.projectSpecificMethods;
 public class EditPage extends projectSpecificMethods {
 
 	public EditPage EditPage_Click() throws InterruptedException {
